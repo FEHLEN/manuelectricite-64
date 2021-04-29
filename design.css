@@ -5,12 +5,24 @@
 .logo a{color: brown;}
 #bar-tete{position: absolute;top:0;width: 100%;}
 ul{display: flex;flex-direction: row;list-style-type: none;}
-.nav-link{margin-left: 10px;border: 3px solid blue;border-radius: 0px 20px 20px;background-color: blue ; color:white;}
-.nav-link:hover{background-color:white; border: 3px solid blue;border-radius: 0px 20px 20px;}
+.nav-link{ background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);margin-right: 5px; font-size: 1.2em;}
+.nav-link span{position: absolute;}
+.nav-link span{top: 0px;left: 0px;width: 30%;height: 3px;
+   background: linear-gradient(to left, rgba(8, 20, 43, 0), #23427c);
+   -webkit-animation: 2s animateTop linear infinite;
+           animation: 2s animateTop linear infinite;
+ }
+ @keyframes animateTop {
+   0% {transform: translateX(100%);
+   }
+   100% {transform: translateX(-100%);
+   }
+ }
+.nav-link:hover{color:white;}
 #dessin{position: absolute;top:180px;left:25%;width: 40%;margin:auto;text-align: center;}
 #dessin p{font-family: 'Cabin-regular';font-weight: bold;}
-.bouton{position: absolute;top:500px;right: 50px;border: 3px solid blue;border-radius: 0px 20px 20px;background-color: blue; color:white; padding:5px;font-family: 'Cabin-Regular';}
-.bouton:hover{background-color: white;}
+.bouton{position: absolute;top:500px;right: 50px; background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); font-size: 1.2em; padding:5px;font-family: 'Cabin-Regular';}
+.bouton:hover{color: white;text-decoration: none;}
 #bandeau{margin-left:10px;width:96%;opacity: 0.8;position: absolute;top:550px;background-color: grey;}
 #bandeau{height: 40px;color:white;font-size: 1.2em;}
 #bandeau p{margin:0;padding-top: 5px;font-family: 'Cabin-regular';}
@@ -19,8 +31,8 @@ ul{display: flex;flex-direction: row;list-style-type: none;}
 #ancreservices h2{font-size: 1.2em;color:rgb(41, 41, 43);text-align: center;}
 #ancreservices p{text-align: center;color:brown;font-size: 1.6em;font-family: 'Cabin-regular';}
 #presentation p, #service1 p, #service2 p{color:rgb(41, 41, 43);font-size: 1.2em;text-align: center;font-family: 'Cabin-regular';}
-#presentation .bouton2{border: 3px solid blue;border-radius: 0px 20px 20px;background-color: blue; color:white; padding:5px;font-family: 'Cabin-Regular';}
-#presentation .bouton2:hover{background-color: white;color:blue;text-decoration: none;}
+#presentation .bouton2{background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); font-size: 1.2em; padding:5px;font-family: 'Cabin-Regular';}
+#presentation .bouton2:hover{color: white;text-decoration: none;}
 #service1 span, #service2 span{color:brown;}#service1, #service2{margin-top: 50px;display:flex;flex-direction: row;}
 .text{width: 50%;}.image{width: 50%;}.image img{background-size: cover;width: 60%;}
 #force{background-image: url('./images/fondGris.jpg');}
@@ -32,23 +44,39 @@ ul{display: flex;flex-direction: row;list-style-type: none;}
 .info{margin-top: 30px;}#ancrecontact .info p{color:white;}
 #ancrecontact{background-image: url('./images/fond2.jpg');}
 #formulaire p{color:rgb(41, 41, 43);}.information{color:white;font-family: 'Cabin-regular';}
-#bouton3{border: 3px solid blue;border-radius: 0px 20px 20px;background-color: blue; color:white; padding:5px;font-family: 'Cabin-Regular';}
+#bouton3{background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); font-size: 1.2em; color:white; padding:5px;font-family: 'Cabin-Regular';}
 #bouton3:hover{background-color: white;color:blue;text-decoration: none;}
 #footer{width:100%;opacity: 0.8;background-color: grey;height: 150px;color:white;font-size: 1em;}
-#footer .bouton2{border: 3px solid blue;border-radius: 0px 20px 20px;background-color: blue; color:white; padding:5px;font-family: 'Cabin-Regular';font-size: 0.8em;}
+#footer .bouton2{background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); font-size: 1.2em; padding:5px;font-family: 'Cabin-Regular';font-size: 0.8em;}
 #footer .bouton2:hover{background-color: white;color:blue;text-decoration: none;}
 #footer p{margin:0;padding-top: 5px;font-size: 1em;font-weight: bold;color:white;font-family: 'Cabin-regular';}
 
 #ancrementions span{color:blue;}
-@media all and (max-device-width:480px)
+@media all and (max-width:480px)
 {
+   #nomarge{padding-left: 10px;}
    #dessin{top:120px;}
-   #ancreservices h1, #ancrementions h1{margin-top: 300px;}
+   #ancreservices{margin-top: 300px;}
+   #ancrementions{margin-top: 300px;}
    #service1, #service2{display: flex;flex-direction: column;}
    #service1 .text, #service2 .text, #service1 .image{width: 100%;}
    #service2 .image{display:none;}
-   .bouton{position: absolute;top:300px;right: 50px;border: 3px solid blue;border-radius: 0px 20px 20px;}
+   .bouton{position: absolute;top:300px;right: 50px;}
    #bandeau{width:95%;opacity: 0.8;position: absolute;top:350px;background-color: grey;}
    #bandeau{height: 120px;color:white;font-size: 1.2em;}
 
+}
+@media all and (max-width:600px)
+{
+   #ancreservices h1, #ancrementions h1{margin-top: 200px;}
+   .bouton{position: absolute;top:300px;right: 50px;}
+   #bandeau{width:95%;opacity: 0.8;position: absolute;top:350px;background-color: grey;}
+   #bandeau{height: 120px;color:white;font-size: 1.2em;}
+}
+@media all and (max-width:768px)
+{
+   #ancreservices h1, #ancrementions h1{margin-top: 150px;}
+   .bouton{position: absolute;top:300px;right: 50px;}
+   #bandeau{width:95%;opacity: 0.8;position: absolute;top:350px;background-color: grey;}
+   #bandeau{height: 120px;color:white;font-size: 1.2em;}
 }
