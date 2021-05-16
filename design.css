@@ -43,7 +43,8 @@ ul{display: flex;flex-direction: row;list-style-type: none;}
 .retour{padding-top: 10px;}
 .info{margin-top: 30px;}#ancrecontact .info p{color:white;}
 #ancrecontact{background-image: url('./images/fond2.jpg');}
-#formulaire p{color:rgb(41, 41, 43);}.information{color:white;font-family: 'Cabin-regular';}
+#formulaire p{color:rgb(41, 41, 43);font-weight: bold;}.information{color:white;font-family: 'Cabin-regular';}
+legend{background-color: #23427c;border-radius:10px;}#formulaire legend p{color:white;}
 #bouton3{background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); font-size: 1.2em; color:white; padding:5px;font-family: 'Cabin-Regular';}
 #bouton3:hover{background-color: white;color:blue;text-decoration: none;}
 #footer{width:100%;opacity: 0.8;background-color: grey;height: 150px;color:white;font-size: 1em;}
