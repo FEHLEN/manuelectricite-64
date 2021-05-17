@@ -1,10 +1,11 @@
 @font-face{font-family: 'Cabin-regular';src:url('./fonts/Cabin-Regular.ttf');/*font */
 }
-
+@font-face{font-family: 'marker';src:url('./fonts/PermanentMarker-Regular.ttf');}
 .logo{margin-left: 20px;font-size: 1.8em;font-weight: bold;}
 .logo a{color: brown;}
 #bar-tete{position: absolute;top:0;width: 100%;}
 ul{display: flex;flex-direction: row;list-style-type: none;}
+.item a{font-family: 'Cabin-Regular';color:white;}
 .nav-link{ background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);margin-right: 5px; font-size: 1.2em;}
 .nav-link span{position: absolute;}
 .nav-link span{top: 0px;left: 0px;width: 30%;height: 3px;
@@ -20,18 +21,20 @@ ul{display: flex;flex-direction: row;list-style-type: none;}
  }
 .nav-link:hover{color:white;}
 #dessin{position: absolute;top:180px;left:25%;width: 40%;margin:auto;text-align: center;}
-#dessin p{font-family: 'Cabin-regular';font-weight: bold;}
-.bouton{position: absolute;top:500px;right: 50px; background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); font-size: 1.2em; padding:5px;font-family: 'Cabin-Regular';}
+#dessin p{font-family: 'marker';font-weight: bold;}
+.bouton{position: absolute;top:500px;right: 50px; background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); color:white;font-size: 1.2em; padding:5px;font-family: 'Cabin-Regular';}
 .bouton:hover{color: white;text-decoration: none;}
-#bandeau{margin-left:10px;width:96%;opacity: 0.8;position: absolute;top:550px;background-color: grey;}
+#bouton4{position:absolute;top: 1000px;; font-size: 3em; color:white; padding:5px;margin-left: 45%;background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5)}
+#bouton4:hover{color:white;text-decoration: none;}
+#bandeau{margin-left:10px;width:96%;opacity: 0.8;position: absolute;top:850px;background-color: grey;}
 #bandeau{height: 40px;color:white;font-size: 1.2em;}
-#bandeau p{margin:0;padding-top: 5px;font-family: 'Cabin-regular';}
+#bandeau p{margin:0;padding-top: 5px;font-family: 'marker';}
 #bandeau span{border:3px solid rgb(41, 41, 43);border-radius: 20px;margin-right: 5px;padding:3px;}
 #ancreservices h1, #ancrementions h1{font-size: 1.5em;text-align: center;color: rgb(41, 41, 43);}
 #ancreservices h2{font-size: 1.2em;color:rgb(41, 41, 43);text-align: center;}
 #ancreservices p{text-align: center;color:brown;font-size: 1.6em;font-family: 'Cabin-regular';}
 #presentation p, #service1 p, #service2 p{color:rgb(41, 41, 43);font-size: 1.2em;text-align: center;font-family: 'Cabin-regular';}
-#presentation .bouton2{background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); font-size: 1.2em; padding:5px;font-family: 'Cabin-Regular';}
+#presentation .bouton2{background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);color: white;font-size: 1.2em; padding:5px;font-family: 'Cabin-Regular';}
 #presentation .bouton2:hover{color: white;text-decoration: none;}
 #service1 span, #service2 span{color:brown;}#service1, #service2{margin-top: 50px;display:flex;flex-direction: row;}
 .text{width: 50%;}.image{width: 50%;}.image img{background-size: cover;width: 60%;}
@@ -42,7 +45,7 @@ ul{display: flex;flex-direction: row;list-style-type: none;}
 #force h2{color:brown;font-size: 1.5em;margin-bottom: 30px;padding-top: 20px;font-weight: bold;font-family: 'Cabin-regular';}
 .retour{padding-top: 10px;}
 .info{margin-top: 30px;}#ancrecontact .info p{color:white;}
-#ancrecontact{background-image: url('./images/fond2.jpg');}
+#ancrecontact{background-image: url('./images/fond2.jpg');width: 80%;margin:auto;}#formulaire{width: 80%;margin:auto;}
 #formulaire p{color:rgb(41, 41, 43);font-weight: bold;}.information{color:white;font-family: 'Cabin-regular';}
 legend{background-color: #23427c;border-radius:10px;}#formulaire legend p{color:white;}
 #bouton3{background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); font-size: 1.2em; color:white; padding:5px;font-family: 'Cabin-Regular';}
