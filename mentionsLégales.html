@@ -1,17 +1,30 @@
 <!doctype html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8"/>
+        <meta content="text/html"; charset="UTF-8"; X-Content-Type-Options="nosniff"/>
+        <link rel="preload" href="design.css" as="font">
+        <link rel="preload" href="design.css" as="style">
         <link rel="stylesheet" href="design.css"/>
-        <meta name="viewport" content="width=device-width"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta lang name="keywords" content="Réparations éléctriques Pau, Réparations éléctriques Lescar, Réparations électriques Gan,
         Réparations électriques Lons, Installation chauffage Pau, Installation chauffage Lescar, Istallation chauffage Lons"/>
-        <title>Les mentions légales de l'entreprise MANU ELECTRICITE dépannage, tous les travaux électriques.</title>
+        <title>Les mentions légales de l'entreprise MANU ELECTRICITE dépannage, rénovations électriques.</title>
         <meta name="description" content="Les mentions légales MANU ELECTRICITE concernant mon entreprise de réparations éléctriques, installation de chauffage électrique, mise aux normes sur des vieilles intallations."/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <meta name="author" content="Nelly Fehlen, WEBNELLDEV"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     </head>
     <body>
+        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="true"></script>
+        <script>
+            window.cookieconsent.initialise({
+            "palette": {"popup": {"background": "#23427c;","text": "#ffffff"},"button": {"background": "#642f64","text": "#ffffff"}},
+            "showLink": false,"position": "bottom",
+            "content": {"message": "Les cookies comme Bootstrap4 sont nécessaires à la navigation entre les pages. Ce site utilise un tag pour les analyses de fréquentation des pages par Google Analytics, aucunement à des fins commerciales. Toutes les informations sont fournies dans la page mentions légales.\n",
+            "dismiss": "J'ai compris"
+            }   
+            });
+          </script>
         <div class="container-fluid" id="fond">
             <video src="images/electricien.mp4"width="100%"  type="video/mp4" loop autoplay muted>  </video>
             <div class="row" id="bar-tete" >
@@ -19,7 +32,7 @@
                     <a class="lien" href="index.html">LOGO</a>
                 </div>
                 <div class="col col-lg-8 item">
-                    <ul>
+                    <ul id="nomarge">
                         <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                         </li>
@@ -33,7 +46,7 @@
                 <p><img src="./images/electricien.jpg" width="80px" alt="dessin électricien"/></p>
                 <p>MANUEL ELECTRICITE</p>
             </div>
-            <p><a class="bouton"  href="index.html">Contactez-moi</a></p>
+            <p><a class="bouton1"  href="tel:+330638700981">Contactez-moi</a></p>
             <div class="col-12" id="bandeau">
                 <p>Lieu : 25 rue de la Fée Lumière 64000 Pau  -  Téléphone : 00 10 11 11 11  - Horaires ouverture : <span>Lun-Ven</span>8h-18h ** <span>Sam</span>8h-12h</p>
             </div> 
@@ -87,3 +100,15 @@
             <p>https://www.ionos.fr/terms-gtc/cgv/</p><br>
             <p class="retour"><a id="bouton3"  href="#bar-tete">^</a></p>
         </div>
+        <div class="col-12" id="footer">
+            <p>Entreprise MANUEL ELECTRICITE 25 rue de la Fée Lumière 64000 Pau</p>
+            <p><a class="bouton2" href="mentionsLégales.html">Mentions Légales</a></p>
+            <p>Appelez le 00 00 00 00 00</p><br>
+            <p><a class="bouton2" href="https://webnelldev.fr" target="_blank">Développé par Webnelldev</a></p>
+        </div> 
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    </body>
+</html>

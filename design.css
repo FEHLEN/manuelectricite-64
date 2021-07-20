@@ -1,5 +1,4 @@
-@font-face{font-family: 'Cabin-regular';src:url('./fonts/Cabin-Regular.ttf');/*font */
-}
+@font-face{font-family: 'Cabin-regular';src:url('./fonts/Cabin-Regular.ttf');}
 @font-face{font-family: 'marker';src:url('./fonts/PermanentMarker-Regular.ttf');}
 .logo{margin-left: 20px;font-size: 1.8em;font-weight: bold;}
 .logo a{color: brown;}
@@ -9,24 +8,17 @@ ul{display: flex;flex-direction: row;list-style-type: none;}
 .nav-link{ background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);margin-right: 5px; font-size: 1.2em;}
 .nav-link span{position: absolute;}
 .nav-link span{top: 0px;left: 0px;width: 30%;height: 3px;
-   background: linear-gradient(to left, rgba(8, 20, 43, 0), #23427c);
-   -webkit-animation: 2s animateTop linear infinite;
-           animation: 2s animateTop linear infinite;
- }
+   background: linear-gradient(to left, rgba(8, 20, 43, 0), #23427c);-webkit-animation: 2s animateTop linear infinite;animation: 2s animateTop linear infinite;}
  @keyframes animateTop {
-   0% {transform: translateX(100%);
-   }
-   100% {transform: translateX(-100%);
-   }
+   0% {transform: translateX(100%);}
+   100% {transform: translateX(-100%);}
  }
 .nav-link:hover{color:white;}
 #dessin{position: absolute;top:180px;left:25%;width: 40%;margin:auto;text-align: center;}
 #dessin p{font-family: 'marker';font-weight: bold;}
-.bouton{position: absolute;top:500px;right: 50px; background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); color:white;font-size: 1.2em; padding:5px;font-family: 'Cabin-Regular';}
-.bouton:hover{color: white;text-decoration: none;}
-#bouton4{position:absolute;top: 1000px;; font-size: 3em; color:white; padding:5px;margin-left: 45%;background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5)}
-#bouton4:hover{color:white;text-decoration: none;}
-#bandeau{margin-left:10px;width:96%;opacity: 0.8;position: absolute;top:850px;background-color: grey;}
+.bouton1{position: absolute;top:500px;right: 50px; background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); color:white;font-size: 1.2em; padding:5px;font-family: 'Cabin-Regular';}
+.bouton1:hover{color: white;text-decoration: none;}
+#bandeau{opacity: 0.8;position: absolute;top:850px;background-color: grey;}
 #bandeau{height: 40px;color:white;font-size: 1.2em;}
 #bandeau p{margin:0;padding-top: 5px;font-family: 'marker';}
 #bandeau span{border:3px solid rgb(41, 41, 43);border-radius: 20px;margin-right: 5px;padding:3px;}
@@ -40,50 +32,104 @@ ul{display: flex;flex-direction: row;list-style-type: none;}
 .text{width: 50%;}.image{width: 50%;}.image img{background-size: cover;width: 60%;}
 #force{background-image: url('./images/fondGris.jpg');}
 .card{width: 300px;}#fort{justify-content: space-around;padding-bottom: 50px;}
-#fort span{font-size: 1em;color:blue;}
+#fort span{font-size: 1em;color:#23427c;}
 #fort p{color:rgb(41, 41, 43);font-family: 'Cabin-regular';}
 #force h2{color:brown;font-size: 1.5em;margin-bottom: 30px;padding-top: 20px;font-weight: bold;font-family: 'Cabin-regular';}
 .retour{padding-top: 10px;}
-.info{margin-top: 30px;}#ancrecontact .info p{color:white;}
-#ancrecontact{background-image: url('./images/fond2.jpg');width: 100%;margin:auto;}#formulaire{width: 80%;margin:auto;}
+.info{margin-top: 30px;}#ancrecontact .info p{color:white;}#bouton{border:3px solid #0b1b3d;}
+#ancrecontact{background-color: #7da2e7;height: auto;/*background-image: url('./images/fond2.jpg');width: 100%;background-size: cover;*/}#formulaire{width: 80%;margin:auto;}
 #formulaire p{color:rgb(41, 41, 43);font-weight: bold;}.information{color:white;font-family: 'Cabin-regular';}
 legend{background-color: #23427c;border-radius:10px;}#formulaire legend p{color:white;}
 #bouton3{background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); font-size: 1.2em; color:white; padding:5px;font-family: 'Cabin-Regular';}
-#bouton3:hover{background-color: white;color:blue;text-decoration: none;}
+#bouton3:hover{background-color: white;color:#23427c;;text-decoration: none;}
 #footer{width:100%;opacity: 0.8;background-color: grey;height: 150px;color:white;font-size: 1em;}
 #footer .bouton2{background: linear-gradient(-30deg, #0b1b3d 50%, #23427c 50%);box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); font-size: 1.2em; padding:5px;font-family: 'Cabin-Regular';font-size: 0.8em;color:white;}
-#footer .bouton2:hover{background-color: white;color:blue;text-decoration: none;}
+#footer .bouton2:hover{background-color: white;color:#23427c;;text-decoration: none;}
 #footer p{margin:0;padding-top: 5px;font-size: 1em;font-weight: bold;color:white;font-family: 'Cabin-regular';}
 /**page mentions*/
-#ancrementions span{color:blue;}
+#ancrementions span{color:#23427c;}
 /**responsive**/
-@media all and (max-width:380px)
-{
-   #nomarge{padding-left: 0px;}
-   #dessin{top:120px;}
-   #ancreservices{margin-top: 350px;}
-   #ancrementions{margin-top: 380px;}
-   #service1, #service2{display: flex;flex-direction: column;}
-   #service1 .text, #service2 .text, #service1 .image{width: 100%;}
-   #service2 .image{display:none;}
-   .bouton{position: absolute;top:300px;right: 50px;}#bouton4{display:none;}
-   #bandeau{width:100%;opacity: 0.8;position: absolute;top:350px;background-color: grey;}
-   #bandeau{height: 180px;color:white;}#bandeau p{font-size: 1em;}
-   #ancrecontact{margin:0px;padding:0px;}#format{font-size: 1.2rem;color:white;}
-   #formulaire{width: 100%;}
+@media all and (min-device-width:270px) and (max-width:414px){
+   #fond{height: 200px;padding:0px;}#fond video{height: 220px;padding:0px;margin:0px;}
+   #dessin{left:25%;width: 40%;margin:auto;text-align: center;}
+   #nomarge{display: flex;flex-direction: column;}.nav-item{margin-bottom: 10px;}.bouton1{display:none;}
+   #service1, #service2{display:flex;flex-direction: column;width: 100%;}.text, .image{width: 100%;}
+   #bandeau{margin-left:0px;width:100%;opacity: 0.8;background-color: grey;}
+   .information p{font-size: 1.2em;} #footer{color:white;font-size: 1em;}
 }
-@media all and (min-device-width:541px) and (max-width:1024px)
-{
-   #ancreservices h1, #ancrementions h1{margin-top: 200px;}
-   .bouton{position: absolute;top:300px;right: 50px;}#bouton4{display:none;}
-   #bandeau{width:95%;opacity: 0.8;position: absolute;top:350px;background-color: grey;}
-   #bandeau{height: 120px;color:white;font-size: 1.2em;}#ancrecontact{width: 100%;}
-   
+@media all and (min-device-width:270px) and (max-width:320px){/*ok*/
+   #dessin{position: absolute;top:210px;}
+   #bandeau{position: absolute;top:390px;height: 200px;}
+   #ancreservices{margin-top: 390px;}
+   #footer{height: 250px;}
+   #ancrementions{margin-top: 390px;}
+   #ancrementions img{width: 250px;}
 }
-@media all and (min-device-width:381) and (max-width:540px)
-{
-   #ancreservices h1, #ancrementions h1{margin-top: 150px;}
-   .bouton{position: absolute;top:300px;right: 50px;}#bouton4{display:none;}
-   #bandeau{width:95%;opacity: 0.8;position: absolute;top:350px;background-color: grey;}
-   #bandeau{height: 120px;color:white;font-size: 1.2em;}
+@media all and (min-width:360px) and (max-width:375px){/*ok*/
+   #dessin{position: absolute;top:220px;}
+   #bandeau{position: absolute;top:390px;height: 200px;}
+   #ancreservices{margin-top: 390px;}
+   #footer{height: 220px;}
+   #ancrementions{margin-top: 390px;}
+   #ancrementions img{width: 250px;}
+}
+@media all and (min-width:376px) and (max-width:414px){/*ok*/
+   #dessin{position: absolute;top:230px;}
+   #bandeau{position: absolute;top:400px;height: 200px;}
+   #ancreservices{margin-top: 400px;}
+   .information p{font-size: 1.2em;}
+   #footer{height: 220px;}
+   #ancrementions{margin-top: 390px;}
+   #ancrementions img{width: 250px;}
+}
+@media all and (min-width:416px) and (max-width:550px){/*ok*/
+   #dessin{position: absolute;top:130px;left:25%;width: 40%;margin:auto;text-align: center;}
+   #bandeau{position: absolute;top:300px;height: 120px;margin-left:0px;width: 95%;}
+   #ancreservices{margin-top: 200px;}.bouton1{display:none;}
+   .information p{font-size: 1.2em;}
+   #footer{height: 220px;text-align: center;}
+   #ancrementions{margin-top: 130px;}
+   #ancrementions img{width: 250px;} 
+}
+@media all and (min-width:568px) and (max-width:641px){/*ok*/
+   #dessin{position: absolute;top:90px;left:25%;width: 40%;margin:auto;text-align: center;}
+   #bandeau{position: absolute;top:300px;height: 120px;margin-left:0px;width: 95%;}
+   #ancreservices{margin-top: 200px;}.bouton1{display:none;}
+   .information p{font-size: 1.2em;}
+   #footer{height: 200px;text-align: center;}
+   #ancrementions{margin-top:150px;}
+   #ancrementions img{width: 250px;} 
+}
+@media all and (min-width:650px) and (max-width:769px){/*ok*/
+   #dessin{position: absolute;top:90px;left:25%;width: 40%;margin:auto;text-align: center;}
+   #bandeau{position: absolute;top:300px;height: 120px;margin-left:0px;width: 95%;}
+   #ancreservices{margin-top: 140px;}.bouton1{display:none;}
+   .information p{font-size: 1.2em;}
+   #footer{height: 220px;text-align: center;}
+   #ancrementions{margin-top: 80px;}
+   #ancrementions img{width: 250px;} 
+
+}
+@media all and (min-width:780px) and (max-width:825px){/*ok*/
+   #dessin{position: absolute;top:90px;left:25%;width: 40%;margin:auto;text-align: center;}
+   #bandeau{position: absolute;top:300px;height: 90px;margin-left:0px;width: 95%;}
+   .bouton1{top:250px;}
+   #footer{height: 200px;text-align: center;}
+   #ancrementions{margin-top: 37px;}
+   #ancrementions img{width: 250px;} 
+
+}
+@media all and (min-width:900px) and (max-width:1025px){/*ok*/
+   #dessin{position: absolute;top:90px;left:25%;width: 40%;margin:auto;text-align: center;}
+   #bandeau{position: absolute;top:300px;height: 90px;margin-left:0px;width: 95%;}
+   .bouton{top:250px;}
+   #footer{height: 220px;text-align: center;}
+   #ancrementions{margin-top:70px;}
+   #ancrementions img{width: 250px;} 
+}
+@media all and (min-width:1100px) and (max-width:1370px){/*ok*/
+   #bandeau{position: absolute;top:350px;height: 80px;margin-left:0px;width: 95%;}
+   #footer{height: 220px;text-align: center;}
+   #ancrementions{margin-top: 50px;}
+   #ancrementions img{width: 250px;} 
 }
